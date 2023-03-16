@@ -12,9 +12,9 @@ namespace CSLight
         {
             string msg;
             int count;
-            Console.Write("Введите сообщение: ");
+            Console.Write("your massege: ");
             msg = Convert.ToString(Console.ReadLine());
-            Console.Write("Введите количество повторов ");
+            Console.Write("Enter the number of repetitions ");
             count = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 0; i < count; i++)

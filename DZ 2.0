@@ -1,0 +1,33 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CSLight
+{
+    class Proram
+    {
+        static void Main(string[] args)
+        {
+
+            Random rand = new Random();
+            int number, count, sum=0;
+            Console.Write("Сколько чисел добавить? - ");
+            count = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < count; i++)
+            {
+                number = rand.Next(1, 101);
+                Console.WriteLine(number);
+                if (number % 3 == 0 || number% 5 == 0) 
+                {
+                    sum += number;
+                    
+                }
+                
+            }
+            Console.WriteLine("Сума чисел кратных 3 и 5 = " + sum);
+        }   
+    }
+}

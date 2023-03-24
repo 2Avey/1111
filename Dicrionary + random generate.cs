@@ -18,12 +18,14 @@ namespace CSLight
 
             for (int i = 0; i < n; i++)
             {
-                int random = rand.Next(0,1000);
+                int random = rand.Next(-1000, 1000);
                 arrayDict.Add(i, random);
             }
             foreach (var item in arrayDict)
             {
-                Console.WriteLine($"{item.Key} - index | {item.Value} - value");
+                Console.WriteLine($"{item.Key} - index | {item.Value} - value |");
+                //var Total = arrayDict.Sum(x => x.Value);
+                //Total += arrayDict.Count;
             }
         }
         
